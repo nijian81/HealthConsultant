@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#45c01a">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="健康资讯"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pic"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="25dp"
+                    android:text="苏宁云商在上海建第二总部，主打金融投资功能"
+                    android:textColor="#444444"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/flag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:text="埃森哲健康顾问 编辑部"
+                    android:textColor="#b2b2b2" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flag1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:text="2015-06-15 20：26"
+                    android:textColor="#b2b2b2" />
+
+                <ImageView
+                    android:id="@+id/pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:layout_below="@id/time"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/empty_photo" />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pic"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:text="        北京时间5月31日凌晨，2015年国际田联钻石联赛美国尤金站比赛顺利进行，中国男子苏炳添以9秒99的出色成绩获得男子100米第三名，这个成绩打破了张培萌保持的10秒00的全国纪录。在正常风速下，苏炳添成为真正意义上第一位进入9秒关口的亚洲本土选手！代表卡塔尔跑出9秒93的费米-奥古诺德，以及9秒99的萨姆埃尔-弗朗西斯，都是来自尼日利亚的“非洲雇佣军”。这场比赛完全够格被称为中国男子百米有史以来的最经典之战，苏炳添并没有在他最擅长的快出发上占据某种优势，反而非常强悍的在途中跑中杀出了让人惊叹的最高速度。
+　　
+    本场比赛开跑时风速为顺风1米5每秒，在最大顺风2米每秒的正常范围内。身穿中国队传统红色战衣的苏炳添在靠草坪的最内道。大会介绍到他时，看上去信心满满的苏炳添，指了指胸中战袍上CHINA字样。比赛方也似乎有某种预感，在蹲距起跑前特地把镜头对准了苏炳添。比赛枪响后，苏炳添出发正常，但没有形成传统意义上所谓前30米苏炳添天下第一的优势，邻道的他国选手同样表现出色。在进入30米抬头加速阶段前，苏炳添并没有突出优势，大概排在第四或第五的位置。
+
+　　30米瞬间掠过，王者苏炳添出现了！他一度和美国名将罗杰斯跑在了并列第一的位置，而且保持了不短的距离！但是在进入60、70米左右的地方，盖伊从第五道冲了上来，他和罗杰斯形成了相互竞争的最强态势，而苏炳添尽管稍微有落后，但也没有被甩开，他和牙买加名将内斯塔-卡特，前世锦赛冠军、圣基茨和尼维斯的吉姆-科林斯竞争进入白热化阶段，最后冲刺，苏炳添保持住了优势，他跑出了9秒99！最后成绩，盖伊以9秒88获得冠军，罗杰斯以9秒90获得亚军，苏炳添以9秒99获得第三，科林斯以9秒99获得第四。"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

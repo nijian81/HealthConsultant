@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#45c01a">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="体检报告分析"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/basic_health_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/corners_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="综合分析"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#efefef" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="    每天需要量大约为250克；轻体力活动的成年男性每天需要量大约为350克。各种米、面、杂粮等可以任意选择，但要尽量避免吃油炸食品和各种甜点心。肉类食物：每天需要量大约为100克；需尽量选择瘦猪肉、牛肉、羊肉、鱼和去皮禽肉，避免吃肥肉、动物内脏和家禽皮。 蛋类：每周1-4个"
+                        android:textColor="#444444"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/input1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/corners_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="逐项分析"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#efefef" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="   红细胞(RBC)
+    正常情况：男性：(4.0-5.5)×1012/L
+    女性：(3.5-5.0)×1012/L
+    增高：真性红细胞增多症、严重脱水、肺源性心脏病、先天性心脏病、高山地区的居民、严重烧伤等。
+    降低：贫血。
+    血红蛋白(HGB)
+    正常情况：男性：(120-160)g/L；
+    女性：(110-150)g/L
+    增高：真性红细胞增多症、严重脱水、肺源性心脏病、先天性心脏病、高山地区的居民、严重烧伤等。
+    降低：贫血。
+    白细胞(WBC)
+    正常情况：(4-10)×109/L
+    增高：各种细胞感染、炎症、严重烧伤。当白细胞明显升高，一般为(200-500)×109/L，并伴有发热、出血、贫血等症状时应警惕白血病。
+    降低：白细胞减少症、脾功能亢进、造血功能障碍等。
+    中性粒细胞比率(NEUT%)
+    正常情况：(50-70)%。
+    增高：细菌感染、炎症等；
+    降低：病毒性感染等。
+    淋巴细胞(LYM)
+    正常情况：(0.8-4)109/L
+    增高：百日咳、传染性单核细胞增多症、病毒感染、急性传染性淋巴细胞增多症、淋巴细胞性白血病等。
+    降低：免疫缺陷等。
+    血小板(PLT)
+    正常情况：(100-320)×109/L。
+    增高：原发性血小板增多症、真性红细胞增多症、慢性白血病、症状性血小板增多症、感染、炎症、恶性肿瘤、缺铁性贫血、外伤、手术、出血等。
+    降低：原发性血小板减少性紫癜、播散性红斑狼疮、药物过敏性血小板减少症、弥漫性血管内凝血、血小板破坏增多、血小板生成减少等。
+血糖
+    餐前血葡萄糖(GLU)
+    正常值：3.9-6.11mmol/L
+    异常情况及分析：增多见于糖尿病、甲状腺功能亢进、皮质醇增多症、肢端肥大症、嗜铬细胞瘤、胰高血糖素瘤、脑外伤、脑溢血。脑瘤、脑膜炎；妊娠呕吐、脱水、全身麻醉时，肝硬化病人常有血糖升高，这可能与生长激素及胰高血糖素升高有关。减少见于各种原因引起的胰岛素分泌过多或对抗胰岛素的激素分泌不足、甲状腺功能不全、肾上腺功能不全、脑垂体恶病质、急性进行性肝脏疾病(急性黄色肝萎缩、急性肝炎、肝癌、磷及砷中毒等)。
+血脂
+    血脂化验单一般有四个项目：
+    总胆固醇(CHO)
+    正常值：2.6-5.18mmol/L
+    异常情况及分析：升高可见于高脂蛋白血症、梗阻性黄疸、肾病综合征、甲状腺功能低下、慢性肾功能衰竭、糖尿病等；降低可见于各种脂蛋白缺陷状态、肝硬化、恶性肿瘤、营养不良、巨细胞性贫血等。
+    甘油三酯(TG)
+    正常值：0.36-1.70mmol/L
+    异常情况及分析：升高可见于家族性高甘油三酯血症、家族性混合性高脂血症、冠心病、动脉粥样硬化、糖尿病、肾病综合征、甲状腺功能减退、胆道梗塞、糖原累积症、妊娠、口服避孕药、酗酒、急性胰腺炎等。此外，女性月经期TC也可降低。
+    低密度脂蛋白胆固醇(LDL-C)
+    正常值：0-3.37mmol/L
+    异常情况及分析：升高可见于家族性高胆固醇血症、混合性高脂血症、糖尿病、甲状腺功能低下、肾病综合征、梗阻性黄疸、慢性肾功能衰竭、妊娠、多发性肌瘤、某些药物的使用等；降低可见于家族性无β和低β-脂蛋白血症、营养不良、甲状腺功能亢进、消化吸收不良、肝硬化、慢性消耗性疾病、恶性肿瘤等。
+    高密度脂蛋白胆固醇(HDL-C)
+    正常值：1.04-2.2mmol
+    异常情况及分析：降低提示易患冠心病。
+"
+                        android:textColor="#444444"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
